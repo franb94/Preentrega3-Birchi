@@ -1,0 +1,269 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  min-height: 100%;
+}
+
+h1 {
+  font-size: 5em;
+}
+
+h2 {
+  font-size: 4em;
+}
+
+h3 {
+  font-size: 3em;
+}
+
+p {
+  font-size: 1.25em;
+}
+
+.colorPregunta {
+  color: #008C93;
+}
+
+.container {
+  max-width: 1400px;
+  margin: auto;
+}
+
+header {
+  background-color: #008C93;
+}
+
+header .logo {
+  padding: 25px 30px;
+  font-weight: bold;
+  color: black;
+  font-size: 1.8em;
+}
+
+header .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header nav {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding-bottom: 25px;
+}
+
+header a {
+  padding: 10px 15px;
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+}
+
+header a:hover {
+  color: white;
+}
+
+.frase {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  height: 90vh;
+  color: white;
+  background-image: url(https://www.mundodeportivo.com/files/image_948_465/files/fp/uploads/2021/08/24/61251a032295e.r_d.2076-1574-1000.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.natacion .container {
+  text-align: center;
+  padding: 200px 12px;
+}
+
+.container h2 {
+  padding: 25px 10px;
+}
+
+.container p {
+  background-color: #A4F3F5;
+  font-size: 1.3em;
+}
+
+.beneficiosNatacion {
+  background-color: #008C93;
+  color: white;
+  text-align: center;
+}
+
+.beneficiosNatacion .container {
+  padding: 100px 0px;
+}
+
+.beneficiosNatacion .listaBeneficios {
+  padding: 100px 40px;
+  margin: 15px;
+  font-size: 1.7em;
+  line-height: 50px;
+  font-weight: bold;
+}
+
+.container .tituloRe {
+  text-align: center;
+  padding: 15px;
+  padding: 40px 15px;
+  font-size: 1.8em;
+  font-style: bolder;
+}
+
+.recomendaciones .container {
+  text-align: center;
+  margin: 15px;
+  padding: 100px 40px;
+}
+
+footer {
+  background-color: #008C93;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+img {
+  height: 40px;
+  width: 40px;
+}
+
+footer h3 {
+  color: white;
+  font-size: 1.5em;
+  text-align: center;
+}
+
+@media (min-width: 720px) {
+  header {
+    position: fixed;
+    width: 100%;
+  }
+  header .container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  header nav {
+    flex-direction: row;
+    padding-bottom: 0;
+    padding-right: 25px;
+  }
+}
+/* seccion Estilos */
+.grid-container {
+  display: grid;
+  gap: 20px;
+  grid-template-areas: "estilos" "crol" "espalda" "pecho" "mariposa";
+}
+
+.estilos {
+  grid-area: estilos;
+  background-color: #A4F3F5;
+  padding: 20px 15px;
+  margin: 5px 15px;
+  margin-top: 70px;
+  text-align: center;
+}
+
+.containerEs h3 {
+  padding: 15px;
+  margin: 20px;
+  margin-bottom: 10px;
+}
+
+.containerEs .imgEs {
+  width: 500px;
+  height: 200px;
+}
+
+.container p {
+  font-size: 1.2em margin 15px;
+  padding: 15px 10px;
+  font-weight: bolder;
+}
+
+.listaEstilo ul {
+  margin: 20px;
+  padding: 25px;
+  list-style-type: none;
+  font-size: 1.5em;
+  font-weight: bolder;
+}
+
+.crol {
+  grid-area: crol;
+  background-color: white;
+  padding: 20px 15px;
+  margin: 5px 15px;
+}
+
+.espalda {
+  grid-area: espalda;
+  background-color: #7FD1AE;
+  padding: 20px 15px;
+  margin: 5px 15px;
+}
+
+.pecho {
+  grid-area: pecho;
+  background-color: white;
+  padding: 20px 15px;
+  margin: 5px 15px;
+}
+
+.mariposa {
+  grid-area: mariposa;
+  background-color: #A4F3F5;
+  padding: 20px 15px;
+  margin: 5px 15px;
+  margin-bottom: 20px;
+}
+
+/* section Historia */
+.hist {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  background-color: #7FD1AE;
+  font-size: 1.3em;
+  font-weight: bold;
+  text-align: center;
+  height: 35vh;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.res .container h2 {
+  font-size: 1.8em;
+}
+
+.int .container h2 {
+  font-size: 1.8em;
+}
+
+.ori .container h2 {
+  font-size: 1.8em;
+}
+
+.act .container h2 {
+  font-size: 1.8em;
+}
+
+form {
+  padding: 100px;
+  margin-bottom: 190px;
+}/*# sourceMappingURL=estilos.css.map */
